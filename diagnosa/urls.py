@@ -20,4 +20,5 @@ from daftarPenyakit.views import daftarPenyakitView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('daftar-penyakit/', daftarPenyakitView),
+    # path('diagnosa/', daftarPenyakitView),
 ]

@@ -7,3 +7,7 @@ def daftarPenyakitView(request):
     all_data_penyakit = DataAsli.objects.all()
     return render(request, 'daftar-penyakit.html',
         {'all_data': all_data_penyakit})
+
+# def cekPenyakit(request):
+#     c = request.POST['gejala']
+#     new_item = 
