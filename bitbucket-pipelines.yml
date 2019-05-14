@@ -16,7 +16,7 @@ pipelines:
             variables:
               HEROKU_API_KEY: 'e9b3c388-0eef-4191-8df9-82f14c3006dd'
               HEROKU_APP_NAME: 'diagnosa'
-              ZIP_FILE: '<string>'
+              # ZIP_FILE: '<string>'
               # WAIT: '<boolean>' # Optional.
               # DEBUG: '<boolean>' # Optional
 
