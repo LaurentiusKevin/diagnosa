@@ -12,8 +12,8 @@ class NamaGejala(models.Model):
     gejala = models.TextField()
 
 class PenyakitGejala(models.Model):
-    penyakit = models.ForeignKey(NamaPenyakit, on_delete=models.PROTECT)
-    gejala = models.ForeignKey(NamaGejala, on_delete=models.PROTECT)
+    penyakit = models.TextField()
+    gejala = models.TextField()
 
     def __str__(self):
         return self.penyakit
