@@ -12,3 +12,13 @@ pipelines:
           - pip
         script: # Modify the commands below to build your repository.
           - pip install -r requirements.txt
+          - pipe: atlassian/heroku-deploy:1.0.0
+            variables:
+              HEROKU_API_KEY: 'e9b3c388-0eef-4191-8df9-82f14c3006dd'
+              HEROKU_APP_NAME: 'diagnosa'
+              ZIP_FILE: '<string>'
+              # WAIT: '<boolean>' # Optional.
+              # DEBUG: '<boolean>' # Optional
+
+
+
