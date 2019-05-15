@@ -19,7 +19,7 @@ from daftarPenyakit.views import daftarPenyakitView, daftarGejalaView, cekPenyak
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('daftar-penyakit/', daftarPenyakitView),
+    path('', daftarPenyakitView),
     path('diagnosa/', daftarGejalaView),
     path('hasil-penyakit/', cekPenyakit),
 ]
