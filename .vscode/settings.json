@@ -1,3 +1,5 @@
 {
-    "python.pythonPath": "/home/kevin/.local/share/virtualenvs/diagnosa-4qbjwvc-/bin/python"
+    "python.pythonPath": "/home/kevin/.local/share/virtualenvs/diagnosa-4qbjwvc-/bin/python",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
 }

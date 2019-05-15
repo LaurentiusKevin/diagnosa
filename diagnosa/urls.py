@@ -18,8 +18,9 @@ from django.urls import path
 from daftarPenyakit.views import daftarPenyakitView, daftarGejalaView, cekPenyakit
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', daftarPenyakitView),
-    path('diagnosa/', daftarGejalaView),
-    path('hasil-penyakit/', cekPenyakit),
+    path('admin/', admin.site.urls, name='admin'),
+    path('', daftarPenyakitView, name='home'),
+    path('diagnosa/', daftarGejalaView, name='diagnosa'),
+    path('hasil-penyakit/', cekPenyakit, name='hasil'),
+    # path('favicon/', )
 ]

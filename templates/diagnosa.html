@@ -1,9 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="id" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Daftar Penyakit</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'favicon.png' %}">
     <style media="screen">
       .breadcrumb li a {
         color: white;
@@ -19,13 +21,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="{% url 'home' %}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/daftar-penyakit">Daftar Penyakit</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/diagnosa">Diagnosa</a>
+            <a class="nav-link" href="{% url 'diagnosa' %}">Diagnosa</a>
           </li>
         </ul>
       </div>

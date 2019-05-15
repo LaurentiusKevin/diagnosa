@@ -11,10 +11,11 @@ def naiveBayes(data):
   n = 1
   p = n / listPenyakit.count()
   m = listGejala.count()
-  ncGejala = 0
+  
 
   nilai_penyakit = []
   for peny in listPenyakit:
+    ncGejala = 0
     hasil = []
     idGejala = []
     filterGejala = penyakit_gejala.filter(penyakit = peny.id)
